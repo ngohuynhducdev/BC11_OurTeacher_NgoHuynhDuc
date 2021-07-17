@@ -1,0 +1,16 @@
+#about {
+  padding-top: 100px;
+  h2 {
+    font-size: 1.6rem;
+    color: $color-primary;
+  }
+  p {
+    font-size: 5rem;
+    font-weight: 600;
+    color: $color-black;
+  }
+
+  background-image: url("../../../assets/images/Violet_top_left_wave.png");
+  @include setBackground(no-repeat, contain, bottom);
+  padding-bottom: 50px;
+}

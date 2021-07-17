@@ -1,0 +1,64 @@
+.btnCall {
+  @include styleButton($color-primary, 0, 0, 1px solid transparent, 20px, 0);
+  font-size: 1.6rem;
+  transition: all 0.5s ease;
+
+  & > i {
+    color: $color-white;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    &:hover > i {
+      color: $color-primary;
+    }
+  }
+}
+
+.input-group {
+  border: 2px solid rgb(212, 212, 212);
+  border-radius: 10px;
+  &:focus-within {
+    box-shadow: 0 0 3px 1px rgb(211, 211, 211);
+  }
+}
+
+.inputNew {
+  @include styleButton(
+    transparent,
+    0,
+    0,
+    0.5px solid rgba(255, 255, 255, 0.3),
+    30px,
+    0
+  );
+
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  height: 50px;
+  width: 100%;
+  transition: 0.5s;
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  &:focus {
+    border: 0.5px solid rgba(255, 255, 255, 1);
+  }
+}
+
+.btnNew {
+  @include styleButton($color-white, 0, 0, 0.5px solid $color-white, 30px, 0);
+  height: 50px;
+  width: 100%;
+  font-size: 1.6rem;
+  transition: 0.5s;
+
+  &:hover {
+    border: 0.5px solid rgba(255, 255, 255, 1);
+    background-color: $color-primary;
+    color: white;
+  }
+}

@@ -1,0 +1,5 @@
+#teacher {
+  background-image: url("../../../assets/images/Wave_White_bottom_right_shape_01.png");
+  @include setBackground(no-repeat, contain, bottom);
+  padding-bottom: 20px;
+}

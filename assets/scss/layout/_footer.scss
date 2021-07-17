@@ -1,0 +1,36 @@
+#footer {
+  background-image: url("../../../assets/images/footer_background.jpg");
+  @include setBackground(no-repeat, cover, bottom);
+  padding-top: 50px;
+  padding-bottom: 200px;
+  color: $color-white;
+  ul li {
+    list-style: none;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: $color-white;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.social i {
+  color: $color-white;
+  transition: 0.5s;
+  &:hover {
+    color: $color-black;
+  }
+}
+
+#validationCustom04 {
+  cursor: pointer;
+}

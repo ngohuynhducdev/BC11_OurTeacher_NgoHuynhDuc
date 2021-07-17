@@ -1,0 +1,24 @@
+@mixin styleButton($bg, $pd-y, $pd-x, $bd, $radius, $ls) {
+  background-color: $bg;
+  padding: $pd-y, $pd-x;
+  border: $bd;
+  border-radius: $radius;
+  letter-spacing: $ls;
+}
+
+@mixin styleButtonHover($bg, $bd-color, $color) {
+  background: $bg;
+  border: $bd-color;
+  color: $color;
+}
+
+// background-image: url("../../images/Violet_top_left_wave.png");
+// background-repeat: no-repeat;
+// background-size: contain;
+// background-position: bottom;
+
+@mixin setBackground($bg-repeat, $bg-size, $bg-position) {
+  background-repeat: $bg-repeat;
+  background-size: $bg-size;
+  background-position: $bg-position;
+}

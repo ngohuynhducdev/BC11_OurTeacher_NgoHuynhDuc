@@ -1,0 +1,12 @@
+#form {
+  padding-top: 100px;
+
+  background-image: url("../../../assets/images/accent_bottom_wave_01.png");
+  @include setBackground(no-repeat, contain, bottom);
+  padding-bottom: 20px;
+  @media screen and (max-width: 972px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
